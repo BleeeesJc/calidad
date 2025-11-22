@@ -1,0 +1,178 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Botón de submit más atractivo */
+html .modal .modal-content button[type="button"] {
+    background-color: var(--portland-orange);
+    color: var(--white);
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--radius-10);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="button"]:hover {
+    background-color: var(--bittersweet);
+}
+
+#tablaModal .modal-content {
+    width: 90%;
+    max-width: 800px; /* Ajusta este valor según sea necesario */
+}
+
+.table-container {
+    width: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+textarea#descripcion {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#petTable {
+    width: 100%;
+    border-collapse: separate;
+}
+
+#petTable td,
+th {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+table td {
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.modal-content button[type="eliminar"] {
+    background-color: rgb(190, 77, 77); /* Color rojo */
+    color: white; /* Color del texto blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--radius-10);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="eliminar"]:hover {
+    background-color: darkred; /* Un tono más oscuro de rojo para el hover */
+}
+
+.modal-content button[type="editar"] {
+    background-color: rgb(25, 177, 25); /* Color rojo */
+    color: white; /* Color del texto blanco */
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--radius-10);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="editarr"]:hover {
+    background-color: darkgreen; /* Un tono más oscuro de rojo para el hover */
+}
+
+/* Contenedor de botones alineados horizontalmente */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 0 20px;
+}
+
+/* Estilos para el contenedor del modal */
+.modal-content {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.permissions-table-container {
+    max-height: 300px; /* Altura máxima para el contenedor */
+    overflow-y: auto; /* Scroll solo en el eje Y */
+    overflow-x: hidden; /* Ocultar cualquier scroll horizontal */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#addRoleButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addRoleButton:hover {
+    background-color: #45a049;
+}
